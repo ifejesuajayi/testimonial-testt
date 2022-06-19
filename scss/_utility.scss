@@ -1,0 +1,113 @@
+.container {
+    max-width: $website-width;
+    padding: 1rem;
+    overflow: hidden;
+    margin: auto;
+}
+
+// buttons
+
+%btn-shared {
+    display: inline-block;
+    padding: 0.5rem 0.95rem;
+    cursor: pointer;
+    border: none;
+}
+
+.btn {
+    &-light {
+        @extend %btn-shared;
+        margin-top: 2rem;
+        background: $light-color;
+        color: #333;
+
+        &:hover {
+            background: $main-color;
+        }
+    }
+
+    &-dark {
+        @extend %btn-shared;
+        margin-top: 2rem;
+        background: $dark-color;
+        color: #fff;
+        width: 50%;
+        padding: 1rem;
+
+        &:hover {
+            background: $main-color;
+        }
+    }
+
+    &-main {
+        @extend %btn-shared;
+        margin-top: 2rem;
+        background: $main-color;
+        color: #333;
+
+        &:hover {
+            background: $main-color;
+        }
+    }
+}
+
+.text-center {
+    text-align: center;
+}
+
+// headings size
+.big-heading {
+    font-size: 50px;
+}
+
+.small-heading {
+    font-size: 30px;
+}
+
+.x-small-heading {
+    font-size: 13px;
+}
+
+// padding
+.py{
+    &-1{
+        padding: 1rem;
+    }
+    &-2{
+        padding: 2rem;
+    }
+    &-3{
+        padding: 3rem;
+    }
+    &-4{
+        padding: 4rem;
+    }
+}
+
+// background
+.bg-dark{
+    background: $dark-color;
+}
+.bg-medium{
+    background: $medium-color;
+}
+.bg-light{
+    background: $light-color;
+}
+.bg-main{
+    background: $main-color;
+}
+
+// bottom line
+.bottom-line{
+    height: 2px;
+    width: 3rem;
+    display: block;
+    background: $main-color;
+    margin: 1rem auto;
+}
+
+.position-1{
+    font-size: 3rem;
+    font-weight: bolder;
+}
